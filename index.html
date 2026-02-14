@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" style="background:rgb(14, 14, 60);">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Direction</title>
+  <!-- HINT:
+  https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors
+  https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators 
+  -->
+  <style>
+    .container {
+      color: white;
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+      background-color: #30336b;
+      border: 3px solid rgba(78, 30, 159, 0.385);
+      border-radius:10px;
+      padding:15px;
+      font-family:helvetica, sans-serif;
+    }
+
+    /*
+Select all the elements that are the direct
+children of the .container class.
+    */
+    .box{
+      display:flex;
+      color:white;
+    }
+
+    .red {
+      background-color: #eb4d4b; 
+      flex-basis:50%;
+      width:auto;
+    }
+    .orange {
+      background-color: #f0932b;
+      flex-basis:75%; 
+      height:auto;
+    }
+    .yellow {background-color: #f6e58d;flex-basis:46%;}
+    .green {background-color: #6ab04c;flex-basis:34%;}
+    .blue {background-color: #4834d4;flex-basis:100%;}
+    .indigo {background-color: #44478c;flex-basis:98%;}
+    .purple {background-color: #be2edd;flex-basis:86%;}
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h2 style="color: antiquewhite;">Colours</h2>
+    <div>Red</div>
+    <div class="box">
+    <div class="red">50</div>
+    </div>
+    <div>Orange</div>
+    <div class="box">
+    <div class="orange">75</div>
+    </div>
+    <div>Yellow</div>
+    <div class="box">
+    <div class="yellow">46</div>
+    </div>
+    <div>Green</div>
+    <div class="box">
+    <div class="green">34</div>
+    </div>
+    <div>Blue</div>
+    <div class="box">
+    <div class="blue">100</div>
+    
+    </div>
+    <div>Indigo</div>
+    <div class="box">
+    <div class="indigo">98</div>
+    </div>
+    <div>Purple</div>
+    <div class="box">
+    <div class="purple">86</div>
+    </div>
+  </div>
+  
+</body>
+
+</html>
